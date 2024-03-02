@@ -31,13 +31,20 @@ lcd1.init_row(X_ORG=8, Y_ORG=8, COL_INTV=6)
 
 
 def LCD_display(x, y):
-    code = int((x / 8) % 3)
+    code = int((x / 8) % 10)
     text1, rect1 = font1.render(str(code), WHITE)
     rect1.center = (x, y)
     screen.blit(text1, rect1)
     # LCD sim
     lcd1.update_col(col=0, code=code)
 
+def LCD_display(x, y):
+    code = int((y / 8) % 10)
+    text1, rect1 = font1.render(str(code), WHITE)
+    rect1.center = (x, y)
+    screen.blit(text1, rect1)
+    # LCD sim
+    lcd1.update_col(col=3, code=code)
 
 def infinite_loop():
     x = WINDOW_WIDTH * 0.5

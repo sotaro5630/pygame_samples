@@ -10,3 +10,7 @@
  - demo_openmoji.py: オープンソースの絵文字、openmojiのデモ。キー操作のデモ。
  - seven_seg_pg.py: Seven_segクラス
  - lcd_font_pg.py: LCD_fontクラス
+
+
+ -まだあまり進んでいません。
+ -終了した後何回かまた出てくることがあります。
